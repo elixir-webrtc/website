@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+a { 
+    color: inherit; 
+} 
+
 .title {
     font-size: 4em;
 }
@@ -15,4 +19,12 @@ body {
 
 .list {
     list-style-type: none;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-size: large;
 }
