@@ -10,7 +10,7 @@ entries:
       - title: "[ ] RTP/RTCP"
       - title: "[ ] SDP"
       - title: "[ ] DTLS"
-      - title: "[ ] <a href='https://github.com/elixir-webrtc/ex_ice.git'>ICE</a>"
+      - title: "[x] <a href='https://github.com/elixir-webrtc/ex_ice.git'>ICE</a>"
       - title: "[x] <a href='https://github.com/elixir-webrtc/ex_turn.git'>TURN</a>"
       - title: "[x] <a href='https://github.com/elixir-webrtc/ex_stun.git'>STUN</a>"
 
