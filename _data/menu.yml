@@ -16,6 +16,11 @@ entries:
 
   - title: Rel - Pure Elixir, publicly available TURN server
 
+  - title: FAQ
+    entries:
+      - title: ICE
+        url: faq/ice
+
   - title: Contact
     entries:
     - title: "michal.sledz at swmansion.com"
