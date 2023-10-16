@@ -30,10 +30,14 @@ github_username:  elixir-webrtc
 remote_theme: "riggraz/no-style-please"
 
 theme_config:
+  appearance: "light"
   show_description: true
 
 plugins:
   - jekyll-feed
+
+mermaid:
+  src: 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.0/mermaid.min.js'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
