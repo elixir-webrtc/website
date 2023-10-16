@@ -16,6 +16,7 @@ entries:
       - title: "[x] <a href='https://github.com/elixir-webrtc/ex_stun.git'>STUN</a>"
 
   - title: Rel - Pure Elixir, publicly available TURN server
+    url: rel
 
   - title: FAQ
     entries:
