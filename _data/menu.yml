@@ -29,6 +29,8 @@ entries:
         url: resources/rewrite_pion_in_elixir_rtcon_2023.pdf
       - title: Rewrite Pion in Elixir - ElixirConf slides (09.2023)
         url: resources/rewrite_pion_in_elixir_elixirconfus_2023.pdf
+      - title: Rewrite Pion in Elixir - ElixirConf Talk (09.2023)
+        url: https://www.youtube.com/watch?v=4XaB4XWg-Qg
 
   - title: Contact
     entries:
