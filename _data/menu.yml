@@ -23,14 +23,29 @@ entries:
       - title: ICE
         url: faq/ice
 
-  - title: Resources
+  - title: Elixir WebRTC Resources
     entries:
       - title: Rewrite Pion in Elixir - RTC.ON slides (10.2023)
         url: resources/rewrite_pion_in_elixir_rtcon_2023.pdf
+      - title: Rewrite Pion in Elixir - RTC.ON talk (10.2023)
+        url: https://www.youtube.com/watch?v=64yXjGZnU1k
       - title: Rewrite Pion in Elixir - ElixirConf slides (09.2023)
         url: resources/rewrite_pion_in_elixir_elixirconfus_2023.pdf
       - title: Rewrite Pion in Elixir - ElixirConf Talk (09.2023)
         url: https://www.youtube.com/watch?v=4XaB4XWg-Qg
+
+  - title: WebRTC Resources
+    entries: 
+      - title: Plan B vs Unified Plan
+        url: https://docs.google.com/document/d/1-ZfikoUtoJa9k-GZG1daN0BU3IjIanQ_JSscHxQesvU/edit
+      - title: The evolution of WebRTC 1.0
+        url: https://blog.mozilla.org/webrtc/the-evolution-of-webrtc/
+      - title: Exploring RTCRtpTransceiver
+        url: https://blog.mozilla.org/webrtc/rtcrtptransceiver-explored/
+      - title: W3C IRC (channel webrtc)
+        url: https://irc.w3.org/
+      - title: W3C WebRTC Meeting slides
+        url: https://www.w3.org/2011/04/webrtc/wiki/Main_Page
 
   - title: Contact
     entries:
