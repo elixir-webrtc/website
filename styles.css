@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Roc Grotesk-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/.41110.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Aeonik-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Aeonik-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Aeonik-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Aeonik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Aeonik-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Aeonik-Bold.ttf") format("truetype");
+}
+
+:root {
+    --colorsviolet100: #4239ac;
+    --colorsviolet20: #f6f5fe;
+    --colorsviolet40: #d2cffd;
+
+    --font-family-aeonik-bold: "Aeonik-Bold", Helvetica;
+    --font-family-aeonik-medium: "Aeonik-Medium", Helvetica;
+    --font-family-aeonik-regular: "Aeonik-Regular", Helvetica;
+    --font-family-roc_grotesk-medium: "Roc Grotesk-Medium", Helvetica;
+
+    --font-size-l: 18px;
+    --font-size-m: 16px;
+    --font-size-s: 14px;
+    --font-size-xl: 20px;
+    /* --font-size-xxl: 20.1px; */
+    --font-size-xxxl: 24px;
+    --font-size-xxxxl: 32px;
+
+}
+
+.inner {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+}
+
+
+.navbar {
+    display: flex;
+    /* #TODO Don't hardcode width */
+    width: 1440px;
+    justify-content: space-between;
+    /* #TODO Revisit padding */
+    padding: 26px 70px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-roc_grotesk-medium);
+    font-size: var(--font-size-xxl);
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 15.6px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.navbar-menu-font {
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 800;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-button {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: var(--colorsviolet100);
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    width: max-content;
+}
+
+.hero-button-font {
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.logo-1 {
+    margin-bottom: -30%;
+    margin-left: 35%;
+}
+
+.hero-copy-font {
+    color: var(--colorsviolet100);
+    font-weight: 400;
+    line-height: 36.8px;
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-xxxxl);
+    font-style: normal;
+    letter-spacing: 0.64px;
+}
