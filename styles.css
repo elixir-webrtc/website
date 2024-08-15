@@ -49,6 +49,14 @@ html {
     box-sizing: border-box;
 }
 
+header {
+    overflow-x: hidden;
+}
+
+main {
+    overflow-x: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -81,7 +89,7 @@ body {
 .navbar {
     justify-content: space-between;
     /* #TODO Revisit padding */
-    padding: 26px 70px;
+    padding: 13px 20px;
 }
 
 .navbar-menu {
@@ -104,6 +112,7 @@ body {
     color: var(--colorsviolet100);
     font-family: var(--font-family-roc_grotesk-medium);
     font-size: var(--font-size-xl);
+    text-wrap: nowrap;
 }
 
 /* hero */
@@ -117,21 +126,25 @@ body {
 
 .hero {
     justify-content: space-between;
-    max-width: 980px;
+    max-width: 1120px;
     padding-top: 100px;
-    padding: 78px 0px 78px 0px;
+    padding: 30px 20px 30px 20px;
+}
+
+.hero-logo {
+    max-width: 409px;
+    max-height: 48px;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .hero-right {
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 .hero-button {
@@ -145,12 +158,12 @@ body {
     width: max-content;
     color: var(--colorsviolet100);
     font-family: var(--font-family-aeonik-medium);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
 }
 
 .hero-copy-font {
     font-family: var(--font-family-aeonik-regular);
-    font-size: var(--font-size-xxxl);
+    font-size: var(--font-size-xxl);
     color: var(--colorsviolet100);
     font-weight: 400;
     /* TODO revisit letter-spacing */
@@ -162,7 +175,22 @@ body {
     margin-left: 35%;
 }
 
+@media (min-width: 420px) {
+    .hero-copy-font {
+        font-size: var(--font-size-xxxl);
+    }
+
+    .hero-button {
+        font-size: var(--font-size-xl);
+    }
+}
+
 @media (min-width: 1024px) {
+    .navbar {
+        /* #TODO Revisit padding */
+        padding: 26px 70px;
+    }
+
     .navbar-menu {
         display: flex;
         align-items: center;
@@ -174,10 +202,18 @@ body {
         align-items: center;
         gap: 40px;
     }
-}
 
-.row {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+    .hero {
+        padding-top: 100px;
+        padding: 78px 70px 78px 70px;
+    }
+
+    .hero-left {
+        gap: 100px;
+    }
+
+    .hero-right {
+        display: flex;
+        flex-direction: column;
+    }
 }
