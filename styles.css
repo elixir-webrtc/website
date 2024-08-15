@@ -2,28 +2,28 @@
     font-family: "Roc Grotesk-Medium";
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/.41110.otf") format("opentype");
+    src: url("./fonts/Roc-Grotesk-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Aeonik-Medium";
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/Aeonik-Medium.ttf") format("truetype");
+    src: url("./fonts/Aeonik-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Aeonik-Regular";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Aeonik-Regular.ttf") format("truetype");
+    src: url("./fonts/Aeonik-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Aeonik-Bold";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/Aeonik-Bold.ttf") format("truetype");
+    src: url("./fonts/Aeonik-Bold.ttf") format("truetype");
 }
 
 :root {
@@ -36,13 +36,12 @@
     --font-family-aeonik-regular: "Aeonik-Regular", Helvetica;
     --font-family-roc_grotesk-medium: "Roc Grotesk-Medium", Helvetica;
 
-    --font-size-l: 18px;
-    --font-size-m: 16px;
     --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
     --font-size-xl: 20px;
-    /* --font-size-xxl: 20.1px; */
-    --font-size-xxxl: 24px;
-    --font-size-xxxxl: 32px;
+    --font-size-xxl: 24px;
+    --font-size-xxxl: 32px;
 
 }
 
@@ -95,18 +94,13 @@ body {
     align-items: center;
     color: var(--colorsviolet100);
     font-family: var(--font-family-roc_grotesk-medium);
-    font-size: var(--font-size-xxl);
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 15.6px;
+    font-size: var(--font-size-xl);
 }
 
 .navbar-menu-font {
     color: var(--colorsviolet100);
     font-family: var(--font-family-aeonik-medium);
     font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 800;
 }
 
 @media (min-width: 1024px) {
@@ -123,9 +117,6 @@ body {
         color: var(--colorsviolet100);
         font-family: var(--font-family-aeonik-medium);
         font-size: var(--font-size-xl);
-        font-style: normal;
-        font-weight: 800;
-        letter-spacing: 0;
     }
 }
 
@@ -174,9 +165,6 @@ body {
     color: var(--colorsviolet100);
     font-family: var(--font-family-aeonik-medium);
     font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0;
 }
 
 .logo-1 {
@@ -185,11 +173,7 @@ body {
 }
 
 .hero-copy-font {
-    color: var(--colorsviolet100);
-    font-weight: 400;
-    line-height: 36.8px;
     font-family: var(--font-family-aeonik-regular);
-    font-size: var(--font-size-xxxxl);
-    font-style: normal;
-    letter-spacing: 0.64px;
+    font-size: var(--font-size-xxxl);
+    color: var(--colorsviolet100);
 }
