@@ -46,6 +46,22 @@
 
 }
 
+/* Use border-box globally */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Default stylesheet sets body margin to 8px */
+body {
+    margin: 0;
+}
+
 .inner {
     display: flex;
     margin-left: auto;
@@ -56,14 +72,22 @@
     padding: 30px 30px 30px 30px;
 }
 
-
 .navbar {
     display: flex;
     /* #TODO Don't hardcode width */
     width: 1440px;
+    /* width: 100%; */
     justify-content: space-between;
     /* #TODO Revisit padding */
     padding: 26px 70px;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar-links {
+    display: none;
 }
 
 .navbar-logo {
@@ -77,12 +101,6 @@
     line-height: 15.6px;
 }
 
-.navbar-menu {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
 .navbar-menu-font {
     color: var(--colorsviolet100);
     font-family: var(--font-family-aeonik-medium);
@@ -91,16 +109,24 @@
     font-weight: 800;
 }
 
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    color: var(--colorsviolet100);
-    font-family: var(--font-family-aeonik-medium);
-    font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 800;
-    letter-spacing: 0;
+@media (min-width: 1024px) {
+    .navbar-menu {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        color: var(--colorsviolet100);
+        font-family: var(--font-family-aeonik-medium);
+        font-size: var(--font-size-xl);
+        font-style: normal;
+        font-weight: 800;
+        letter-spacing: 0;
+    }
 }
 
 .row {
