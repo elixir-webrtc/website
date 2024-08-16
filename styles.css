@@ -44,6 +44,12 @@
     --font-size-xxxl: 32px;
 }
 
+/* from https://stackoverflow.com/a/38994837/9620900 */
+/* Hiding scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Use border-box globally */
 html {
     box-sizing: border-box;
@@ -68,6 +74,27 @@ body {
     margin: 0;
 }
 
+ul {
+    /* Place bullet points close to <li>'s content */
+    list-style-position: inside;
+    padding: 0;
+}
+
+li span {
+    /* Reduce space between bullet point, which is by default set to 
+    margin-right: 14px, and <li>'s contet */
+    position: relative;
+    left: -6px;
+}
+
+.section-header {
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 500;
+    color: var(--colorsviolet100);
+}
+
 .container {
     display: flex;
     margin-left: auto;
@@ -75,7 +102,7 @@ body {
     max-width: 1440px;
     width: 100%;
     justify-content: center;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 20px 30px 20px;
 }
 
 /* navbar */
@@ -127,8 +154,6 @@ body {
 .hero {
     justify-content: space-between;
     max-width: 1120px;
-    padding-top: 100px;
-    padding: 30px 20px 30px 20px;
 }
 
 .hero-logo {
@@ -175,6 +200,86 @@ body {
     margin-left: 35%;
 }
 
+/* demos */
+.demos-outer {
+    width: 100%;
+    background-color: #D2CFFD80;
+    /* background: linear-gradient(183.02deg, rgba(255, 255, 255, 0) -24.48%, rgba(104, 91, 242, 0.3) 103.09%), rgba(210, 207, 253, 0.5); */
+    /* background: linear-gradient(183.02deg, rgba(255, 255, 255, 0) -24.48%, rgba(104, 91, 242, 0.3) 103.09%), #D2CFFD50; */
+}
+
+.demos {
+    flex-direction: column;
+    max-width: 1120px;
+    gap: 30px;
+}
+
+.demos-tiles {
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+    /* Hide scrollbar for Firefox, IE and Edge.
+    For Chrome, Safari and Opera, this is done globally on webkit */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.demo-shadow-box {
+    /* Create some space for shadow,
+    it will be added in .demo class. */
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.demo {
+    width: 295px;
+    height: 490px;
+    padding: 55px 30px 55px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: var(--colorsviolet100);
+    justify-content: space-between;
+    box-shadow: 6px 6px 4px rgba(210, 207, 253, 0.5);
+}
+
+.demo-title {
+    font-family: var(--font-family-aeonik-bold);
+    font-size: var(--font-size-xxl);
+    line-height: 120%;
+}
+
+.demo-desc {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    line-height: 160%;
+}
+
+.demo-stack {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-s);
+    line-height: 140%;
+}
+
+.demo-button {
+    display: flex;
+    width: 210px;
+    height: 56px;
+    color: #FFFFFF;
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    background-color: var(--colorsviolet100);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 420px) {
     .hero-copy-font {
         font-size: var(--font-size-xxxl);
@@ -186,6 +291,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .container {
+        padding: 78px 70px 78px 70px;
+    }
+
     .navbar {
         /* #TODO Revisit padding */
         padding: 26px 70px;
@@ -201,11 +310,6 @@ body {
         display: flex;
         align-items: center;
         gap: 40px;
-    }
-
-    .hero {
-        padding-top: 100px;
-        padding: 78px 70px 78px 70px;
     }
 
     .hero-left {
