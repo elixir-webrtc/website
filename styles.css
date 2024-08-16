@@ -392,6 +392,32 @@ li span {
     color: var(--colorsviolet100);
 }
 
+/* talks */
+.talks-outer {
+    background-color: #FFFFFF;
+}
+
+.talks {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.talks-tiles {
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+    /* Hide scrollbar for Firefox, IE and Edge.
+    For Chrome, Safari and Opera, this is done globally on webkit */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.talk-iframe {
+    border-radius: 5px;
+}
+
 @media (min-width: 420px) {
     .hero-copy-font {
         font-size: var(--font-size-xxxl);
