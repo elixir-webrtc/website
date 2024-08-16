@@ -30,6 +30,7 @@
     --colorsviolet100: #4239ac;
     --colorsviolet20: #f6f5fe;
     --colorsviolet40: #d2cffd;
+    --lighttext-colorsnavy-100: #001a72;
 
     --font-family-aeonik-bold: "Aeonik-Bold", Helvetica;
     --font-family-aeonik-medium: "Aeonik-Medium", Helvetica;
@@ -418,6 +419,29 @@ li span {
     border-radius: 5px;
 }
 
+.footer-outer {
+    width: 100%;
+    background: linear-gradient(360deg, #675AF1 -135%, #FFFFFF 68.33%);
+}
+
+.footer {
+    gap: 30px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 20px;
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--lighttext-colorsnavy-100);
+}
+
 @media (min-width: 420px) {
     .hero-copy-font {
         font-size: var(--font-size-xxxl);
@@ -467,5 +491,9 @@ li span {
         /* TODO revisit */
         flex-basis: 0;
         height: 267px;
+    }
+
+    .footer {
+        padding: 40px 70px;
     }
 }
