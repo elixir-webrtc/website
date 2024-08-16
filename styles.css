@@ -225,7 +225,7 @@ li span {
     /* IE and Edge */
 }
 
-.demo-shadow-box {
+.shadow-box {
     /* Create some space for shadow,
     it will be added in .demo class. */
     padding-bottom: 10px;
@@ -281,7 +281,7 @@ li span {
 
 /* live-coding */
 .lc ul {
-    padding-left : 30px;
+    padding-left: 30px;
 }
 
 .lc-outer {
@@ -325,6 +325,71 @@ li span {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+/* features */
+.features-outer {
+    width: 100%;
+    background-color: var(--colorsviolet20);
+}
+
+.features {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.features-desc {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--colorsviolet100);
+    line-height: 160%;
+}
+
+.features-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 215px;
+    height: 310px;
+    padding: 30px 15px 30px 15px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 5px 4px rgba(210, 207, 253, 0.5);
+    border-radius: 10px;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-title {
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-bold);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+}
+
+.feature-desc {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    color: var(--colorsviolet100);
 }
 
 @media (min-width: 420px) {
