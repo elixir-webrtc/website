@@ -74,12 +74,6 @@ body {
     margin: 0;
 }
 
-ul {
-    /* Place bullet points close to <li>'s content */
-    list-style-position: inside;
-    padding: 0;
-}
-
 li span {
     /* Reduce space between bullet point, which is by default set to 
     margin-right: 14px, and <li>'s contet */
@@ -99,7 +93,7 @@ li span {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: 1120px;
     width: 100%;
     justify-content: center;
     padding: 30px 20px 30px 20px;
@@ -117,6 +111,7 @@ li span {
     justify-content: space-between;
     /* #TODO Revisit padding */
     padding: 13px 20px;
+    max-width: 1440px;
 }
 
 .navbar-menu {
@@ -153,7 +148,6 @@ li span {
 
 .hero {
     justify-content: space-between;
-    max-width: 1120px;
 }
 
 .hero-logo {
@@ -201,6 +195,12 @@ li span {
 }
 
 /* demos */
+.demo ul {
+    /* Place bullet points close to <li>'s content */
+    list-style-position: inside;
+    padding: 0;
+}
+
 .demos-outer {
     width: 100%;
     background-color: #D2CFFD80;
@@ -210,7 +210,6 @@ li span {
 
 .demos {
     flex-direction: column;
-    max-width: 1120px;
     gap: 30px;
 }
 
@@ -280,6 +279,54 @@ li span {
     justify-content: center;
 }
 
+/* live-coding */
+.lc ul {
+    padding-left : 30px;
+}
+
+.lc-outer {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.lc {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lc-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lc-desc {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--colorsviolet100);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.lc-video {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+    height: 360px;
+    max-width: 640px;
+}
+
+.lc-video-iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 @media (min-width: 420px) {
     .hero-copy-font {
         font-size: var(--font-size-xxxl);
@@ -319,5 +366,15 @@ li span {
     .hero-right {
         display: flex;
         flex-direction: column;
+    }
+
+    .lc-content {
+        flex-direction: row;
+    }
+
+    .lc-video {
+        /* TODO revisit */
+        flex-basis: 0;
+        height: 267px;
     }
 }
