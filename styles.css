@@ -37,6 +37,7 @@
     --font-family-aeonik-regular: "Aeonik-Regular", Helvetica;
     --font-family-roc_grotesk-medium: "Roc Grotesk-Medium", Helvetica;
 
+    --font-size-xs: 12px;
     --font-size-s: 14px;
     --font-size-m: 16px;
     --font-size-l: 18px;
@@ -84,7 +85,7 @@ li span {
 
 .section-header {
     font-family: var(--font-family-aeonik-medium);
-    font-size: var(--font-size-xxxl);
+    font-size: var(--font-size-xxl);
     font-style: normal;
     font-weight: 500;
     color: var(--colorsviolet100);
@@ -111,8 +112,7 @@ li span {
 .navbar {
     justify-content: space-between;
     flex-wrap: wrap;
-    /* #TODO Revisit padding */
-    padding: 13px 20px;
+    padding: 30px 20px;
     max-width: 1440px;
 }
 
@@ -188,7 +188,7 @@ li span {
 }
 
 .hero-logo {
-    max-width: 409px;
+    max-width: 300px;
     max-height: 48px;
 }
 
@@ -196,6 +196,7 @@ li span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
@@ -208,13 +209,22 @@ li span {
     border-radius: 10px;
     border: 1px solid;
     border-color: var(--colorsviolet100);
+    background-color: var(--colorsviolet100);
     align-items: center;
     gap: 16px;
-    padding: 16px 24px;
+    padding: 10px 20px;
     width: max-content;
-    color: var(--colorsviolet100);
+    /* color: var(--colorsviolet100); */
+    color: #ffffff;
     font-family: var(--font-family-aeonik-medium);
     font-size: var(--font-size-l);
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px
 }
 
 .hero-copy-font {
@@ -224,6 +234,7 @@ li span {
     font-weight: 400;
     /* TODO revisit letter-spacing */
     letter-spacing: 0.64px;
+    text-align: center;
 }
 
 .hero-logo-small {
@@ -270,9 +281,9 @@ li span {
 }
 
 .demo {
-    width: 295px;
-    height: 490px;
-    padding: 55px 30px 55px 30px;
+    width: 230px;
+    height: 400px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,9 +295,14 @@ li span {
     box-shadow: 6px 6px 4px rgba(210, 207, 253, 0.5);
 }
 
+.demo-img {
+    width: 60px;
+    height: 60px;
+}
+
 .demo-title {
     font-family: var(--font-family-aeonik-bold);
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
     line-height: 120%;
 }
 
@@ -304,11 +320,11 @@ li span {
 
 .demo-button {
     display: flex;
-    width: 210px;
-    height: 56px;
+    width: 150px;
+    height: 40px;
     color: #FFFFFF;
     font-family: var(--font-family-aeonik-medium);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
     font-style: normal;
     background-color: var(--colorsviolet100);
     border-radius: 10px;
@@ -354,7 +370,7 @@ li span {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 1;
-    height: 360px;
+    height: 219px;
     max-width: 640px;
 }
 
@@ -392,21 +408,23 @@ li span {
 
 .feature {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    width: 215px;
-    height: 310px;
-    padding: 30px 15px 30px 15px;
+    gap: 20px;
+    align-items: start;
+    padding: 20px 20px;
     background-color: #FFFFFF;
     box-shadow: 3px 5px 4px rgba(210, 207, 253, 0.5);
     border-radius: 10px;
 }
 
+.feature-img {
+    width: 50px;
+    height: 50px;
+}
+
 .feature-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .feature-title {
@@ -416,7 +434,7 @@ li span {
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .feature-desc {
@@ -425,7 +443,7 @@ li span {
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    text-align: center;
+    /* text-align: center; */
     color: var(--colorsviolet100);
 }
 
@@ -461,7 +479,7 @@ li span {
 }
 
 .footer {
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     display: flex;
     margin-left: auto;
@@ -469,33 +487,29 @@ li span {
     max-width: 1120px;
     width: 100%;
     justify-content: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
     font-family: var(--font-family-aeonik-regular);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-xs);
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
     color: var(--lighttext-colorsnavy-100);
 }
 
-@media (min-width: 420px) {
-    .hero-copy-font {
-        font-size: var(--font-size-xxxl);
-    }
-
-    .hero-button {
-        font-size: var(--font-size-xl);
-    }
+.footer-img {
+    width: 45px;
 }
 
 @media (min-width: 1024px) {
+    .section-header {
+        font-size: var(--font-size-xxxl);
+    }
 
     .container {
         padding: 78px 70px 78px 70px;
     }
 
     .navbar {
-        /* #TODO Revisit padding */
         padding: 26px 70px;
     }
 
@@ -521,11 +535,54 @@ li span {
 
     .hero-left {
         gap: 100px;
+        align-items: start;
+    }
+
+    .hero-logo {
+        max-width: 409px;
+    }
+
+    .hero-button {
+        background-color: var(--colorsviolet20);
+        padding: 16px 24px;
+        color: var(--colorsviolet100);
+        font-size: var(--font-size-xl);
+    }
+
+    .hero-copy {
+        align-items: start;
+        gap: 0px;
+    }
+
+    .hero-copy-font {
+        text-align: left;
+        font-size: var(--font-size-xxxl);
     }
 
     .hero-right {
         display: flex;
         flex-direction: column;
+    }
+
+    .demo {
+        width: 295px;
+        height: 490px;
+        padding: 55px 30px 55px 30px;
+    }
+
+    .demo-img {
+        width: 81px;
+        height: 65px;
+    }
+
+    .demo-title {
+        font-size: var(--font-size-xxl);
+    }
+
+    .demo-button {
+        width: 210px;
+        height: 56px;
+        font-size: var(--font-size-xl);
     }
 
     .lc-content {
@@ -538,7 +595,39 @@ li span {
         height: 267px;
     }
 
+    .feature {
+        flex-direction: column;
+        gap: 30px;
+        width: 215px;
+        height: 310px;
+        padding: 30px 15px;
+        align-items: center;
+    }
+
+    .feature-img {
+        width: 81px;
+        height: 56px;
+    }
+
+    .feature-content {
+        gap: 20px;
+    }
+
+    .feature-title {
+        text-align: center;
+    }
+
+    .feature-desc {
+        text-align: center;
+    }
+
     .footer {
+        gap: 30px;
         padding: 40px 70px;
+        font-size: var(--font-size-m);
+    }
+
+    .footer-img {
+        width: 74px;
     }
 }
