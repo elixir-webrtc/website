@@ -110,32 +110,68 @@ li span {
 
 .navbar {
     justify-content: space-between;
+    flex-wrap: wrap;
     /* #TODO Revisit padding */
     padding: 13px 20px;
     max-width: 1440px;
 }
 
-.navbar-menu {
-    display: none;
-    color: var(--colorsviolet100);
-    font-family: var(--font-family-aeonik-medium);
-    font-size: var(--font-size-l);
-}
-
-.navbar-links {
-    display: none;
-    color: var(--colorsviolet100);
-    font-family: var(--font-family-aeonik-medium);
-    font-size: var(--font-size-xl);
-}
-
-.navbar-logo {
+.navbar-left {
     display: flex;
     align-items: center;
     color: var(--colorsviolet100);
     font-family: var(--font-family-roc_grotesk-medium);
     font-size: var(--font-size-xl);
     text-wrap: nowrap;
+}
+
+.navbar-left-txt {
+    display: none;
+}
+
+.navbar-mid {
+    display: none;
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-l);
+}
+
+.navbar-right {
+    display: none;
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xl);
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu-content {
+    width: 100%;
+    display: none;
+}
+
+.navbar-menu-content ul {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    left: 0;
+    background-color: var(--colorsviolet20);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-menu-content ul li {
+    padding: 15px;
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xl);
+    color: var(--colorsviolet100);
+
 }
 
 /* hero */
@@ -453,6 +489,7 @@ li span {
 }
 
 @media (min-width: 1024px) {
+
     .container {
         padding: 78px 70px 78px 70px;
     }
@@ -462,16 +499,24 @@ li span {
         padding: 26px 70px;
     }
 
-    .navbar-menu {
+    .navbar-left-txt {
+        display: block;
+    }
+
+    .navbar-mid {
         display: flex;
         align-items: center;
         gap: 80px;
     }
 
-    .navbar-links {
+    .navbar-right {
         display: flex;
         align-items: center;
         gap: 40px;
+    }
+
+    .navbar-menu {
+        display: none;
     }
 
     .hero-left {

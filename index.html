@@ -13,18 +13,30 @@
   <header>
     <div class="navbar-outer">
       <nav class="container navbar">
-        <div class="navbar-logo">
-          <img src="img/logo.svg" alt="Elixir WebRTC" />
-          <div>Elixir WebRTC</div>
+        <div class="navbar-left">
+          <img width="36" height="36" src="img/logo.svg" alt="Elixir WebRTC" />
+          <div class="navbar-left-txt">Elixir WebRTC</div>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-mid">
           <div>Demos</div>
           <div>Features</div>
           <div>Talks</div>
         </div>
-        <div class="navbar-links">
+        <div class="navbar-right">
           <div>Docs</div>
           <img src="img/github-logo.svg" alt="GitHub" />
+        </div>
+        <div id="navbar-menu" class="navbar-menu">
+          <img width="36" height="36" src="./img/menu.svg" />
+        </div>
+        <div id="navbar-menu-content" class="navbar-menu-content">
+          <ul>
+            <li>Demos</li>
+            <li>Features</li>
+            <li>Talks</li>
+            <li>Docs</li>
+            <li>GitHub</li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -249,6 +261,8 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
