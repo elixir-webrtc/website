@@ -501,6 +501,10 @@ li span {
 }
 
 @media (min-width: 1024px) {
+    .arrow-right {
+        stroke: var(--colorsviolet100);
+    }
+
     .section-header {
         font-size: var(--font-size-xxxl);
     }
@@ -625,9 +629,11 @@ li span {
         gap: 30px;
         padding: 40px 70px;
         font-size: var(--font-size-m);
+        text-align: center;
+        justify-content: center;
     }
 
     .footer-img {
-        width: 74px;
+        width: 60px;
     }
 }
