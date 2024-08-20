@@ -432,6 +432,8 @@ a:visited {
     display: flex;
     gap: 20px;
     align-items: start;
+    /* FIXME this doesn't work for small tiles */
+    max-width: 500px;
     padding: 20px 20px;
     background-color: #FFFFFF;
     box-shadow: 3px 5px 4px rgba(210, 207, 253, 0.5);
