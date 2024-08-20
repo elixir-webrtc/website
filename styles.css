@@ -200,7 +200,6 @@ a:visited {
 }
 
 .hero {
-    justify-content: space-between;
     padding-bottom: 75px;
 }
 
@@ -559,6 +558,10 @@ a:visited {
 
     .navbar-menu {
         display: none;
+    }
+
+    .hero {
+        justify-content: space-between;
     }
 
     .hero-left {
