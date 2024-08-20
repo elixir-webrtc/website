@@ -18,24 +18,24 @@
           <div class="navbar-left-txt">Elixir WebRTC</div>
         </div>
         <div class="navbar-mid">
-          <div>Demos</div>
-          <div>Features</div>
-          <div>Talks</div>
+          <div><a href="#demos">Demos</a></div>
+          <div><a href="#features">Features</a></div>
+          <div><a href="#talks">Talks</a></div>
         </div>
         <div class="navbar-right">
-          <div>Docs</div>
-          <img src="img/github-logo.svg" alt="GitHub" />
+          <div><a href="https://hexdocs.pm/ex_webrtc/readme.html">Docs</a></div>
+          <a href="https://github.com/elixir-webrtc"><img src="img/github-logo.svg" alt="GitHub" /></a>
         </div>
         <div id="navbar-menu" class="navbar-menu">
           <img width="36" height="36" src="./img/menu.svg" />
         </div>
         <div id="navbar-menu-content" class="navbar-menu-content">
           <ul>
-            <li>Demos</li>
-            <li>Features</li>
-            <li>Talks</li>
-            <li>Docs</li>
-            <li>GitHub</li>
+            <li><a href="#demos">Demos</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="https://hexdocs.pm/ex_webrtc/readme.html">Docs</a></li>
+            <li><a href="https://github.com/elixir-webrtc">GitHub</a></li>
           </ul>
         </div>
       </nav>
@@ -50,16 +50,15 @@
             <h1 class="hero-copy-font">A batteries-included WebRTC implementation for the Elixir ecosystem.</h1>
           </div>
           <div class="hero-button">
-            <div>Check out our demos</div>
-
-            <svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
-              stroke-linejoin="round" stroke="#ffffff" stroke-width="1.5" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 20L12 4" />
-              <path d="M6 14L12 20L18 14" />
-            </svg>
-
-            <!-- <img class="arrow-right" src="img/arrowright.svg" /> -->
+            <a href="#demos" class="hero-button-link">
+              <span>Check out our demos</span>
+              <svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" stroke="#ffffff" stroke-width="1.5" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 20L12 4" />
+                <path d="M6 14L12 20L18 14" />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="hero-right">
@@ -72,7 +71,7 @@
         </div>
       </div>
     </section>
-    <section class="demos-outer">
+    <section id="demos" class="demos-outer">
       <div class="container demos">
         <div class="section-header">Demos</div>
         <div class="demos-tiles">
@@ -88,7 +87,9 @@
                   <li><span>Elixir Nx</span></li>
                 </ul>
               </div>
-              <div class="demo-button">Check it!</div>
+              <div class="demo-button">
+                <a class="demo-button-link" href="https://recognizer.elixir-webrtc.org">Check it!</a>
+              </div>
             </div>
           </div>
           <div class="shadow-box">
@@ -104,7 +105,9 @@
                   <li><span>Elixir WebRTC</span></li>
                 </ul>
               </div>
-              <div class="demo-button">Check it!</div>
+              <div class="demo-button">
+                <a class="demo-button-link" href="https://broadcaster.elixir-webrtc.org">Check it!</a>
+              </div>
             </div>
           </div>
           <div class="shadow-box">
@@ -118,7 +121,9 @@
                   <li><span>Elixir WebRTC</span></li>
                 </ul>
               </div>
-              <div class="demo-button">Check it!</div>
+              <div class="demo-button">
+                <a class="demo-button-link" href="https://nexus.elixir-webrtc.org">Check it!</a>
+              </div>
             </div>
           </div>
         </div>
@@ -150,7 +155,7 @@
         </div>
       </div>
     </section>
-    <section class="features-outer">
+    <section id="features" class="features-outer">
       <div class="container features">
         <div class="section-header">Features</div>
         <div class="features-desc">
@@ -159,7 +164,7 @@
         </div>
         <div class="features-tiles">
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn" onclick="location.href='https://github.com/elixir-webrtc/ex_webrtc_dashboard';">
               <img class="feature-img" src="./img/observability.svg" />
               <div class="feature-content">
                 <div class="feature-title">Observability</div>
@@ -169,7 +174,7 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn" onclick="location.href='https://hexdocs.pm/ex_webrtc/simulcast.html';">
               <img class="feature-img" src="./img/simulcast.svg" />
               <div class="feature-content">
                 <div class="feature-title">Simulcast</div>
@@ -178,7 +183,7 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn" onclick="location.href='https://github.com/elixir-webrtc/xav';">
               <img class="feature-img" src="./img/xav.svg" />
               <div class="feature-content">
                 <div class="feature-title">Xav</div>
@@ -188,7 +193,7 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn" onclick="location.href='https://hexdocs.pm/ex_webrtc/intro.html';">
               <img class="feature-img" src="./img/tutorials.svg" />
               <div class="feature-content">
                 <div class="feature-title">Tutorials</div>
@@ -197,7 +202,8 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn"
+              onclick="location.href='https://github.com/membraneframework/membrane_webrtc_plugin';">
               <img class="feature-img" src="./img/membrane.svg" />
               <div class="feature-content">
                 <div class="feature-title">Membrane Ready</div>
@@ -206,7 +212,7 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn" onclick="location.href='#demos';">
               <img class="feature-img" src="./img/demos.svg" />
               <div class="feature-content">
                 <div class="feature-title">Demo Applications</div>
@@ -216,7 +222,8 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn"
+              onclick="location.href='https://github.com/elixir-webrtc/ex_webrtc/tree/master/examples';">
               <img class="feature-img" src="./img/examples.svg" />
               <div class="feature-content">
                 <div class="feature-title">Examples</div>
@@ -225,7 +232,7 @@
             </div>
           </div>
           <div class="shadow-box">
-            <div class="feature">
+            <div class="feature btn" onclick="location.href='https://vimeo.com/946155859';">
               <img class="feature-img" src="./img/whipwhep.svg" />
               <div class="feature-content">
                 <div class="feature-title">WHIP/WHEP Ready</div>
@@ -237,8 +244,7 @@
         </div>
       </div>
     </section>
-
-    <section class=talks-outer>
+    <section id="talks" class=talks-outer>
       <div class="container talks">
         <div class="section-header">Talks</div>
         <div class="features-desc">Want to know more? See our conference talks!</div>
