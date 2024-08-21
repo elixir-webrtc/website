@@ -50,8 +50,8 @@
             <img class="hero-logo" src="img/elixir-webrtc.svg" />
             <h1 class="hero-copy-font">A batteries-included WebRTC implementation for the Elixir ecosystem.</h1>
           </div>
-          <div class="hero-button">
-            <a href="#demos" class="hero-button-link">
+          <a href="#demos">
+            <div class="hero-button">
               <span>Check out our demos</span>
               <svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
                 stroke-linejoin="round" stroke="#ffffff" stroke-width="1.5" fill="none"
@@ -59,8 +59,8 @@
                 <path d="M12 20L12 4" />
                 <path d="M6 14L12 20L18 14" />
               </svg>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="hero-right">
           <div class="hero-logo-small">
@@ -88,9 +88,9 @@
                   <li><span>Elixir Nx</span></li>
                 </ul>
               </div>
-              <div class="demo-button">
-                <a class="demo-button-link" href="https://recognizer.elixir-webrtc.org">Check it out!</a>
-              </div>
+              <a href="https://recognizer.elixir-webrtc.org">
+                <div class="demo-button">Check it out!</div>
+              </a>
             </div>
           </div>
           <div class="shadow-box">
@@ -106,9 +106,9 @@
                   <li><span>Elixir WebRTC</span></li>
                 </ul>
               </div>
-              <div class="demo-button">
-                <a class="demo-button-link" href="https://broadcaster.elixir-webrtc.org">Check it out!</a>
-              </div>
+              <a href="https://broadcaster.elixir-webrtc.org">
+                <div class="demo-button">Check it out!</div>
+              </a>
             </div>
           </div>
           <div class="shadow-box">
@@ -122,9 +122,9 @@
                   <li><span>Elixir WebRTC</span></li>
                 </ul>
               </div>
-              <div class="demo-button">
-                <a class="demo-button-link" href="https://nexus.elixir-webrtc.org">Check it out!</a>
-              </div>
+              <a href="https://nexus.elixir-webrtc.org">
+                <div class="demo-button">Check it out!</div>
+              </a>
             </div>
           </div>
         </div>
@@ -168,83 +168,99 @@
         </div>
         <div class="features-tiles">
           <div class="shadow-box">
-            <div class="feature btn" onclick="location.href='https://github.com/elixir-webrtc/ex_webrtc_dashboard';">
-              <img class="feature-img" src="./img/observability.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Observability</div>
-                <div class="feature-desc">Dedicated, easy to integrate with Phoenix, dashboard that provides server-side
-                  webrtc-internals.</div>
-              </div>
-            </div>
-          </div>
-          <div class="shadow-box">
-            <div class="feature btn" onclick="location.href='https://hexdocs.pm/ex_webrtc/simulcast.html';">
-              <img class="feature-img" src="./img/simulcast.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Simulcast</div>
-                <div class="feature-desc">Support for multiple inbound resolutions that allows you to chose video
-                  quality of your preference.</div>
-              </div>
-            </div>
-          </div>
-          <div class="shadow-box">
-            <div class="feature btn" onclick="location.href='https://github.com/elixir-webrtc/xav';">
-              <img class="feature-img" src="./img/xav.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Xav</div>
-                <div class="feature-desc">Library for audio/video decoding that makes it easy to feed data into Elixir
-                  Nx.
+            <a href="https://github.com/elixir-webrtc/ex_webrtc_dashboard">
+              <div class="feature">
+                <img class="feature-img" src="./img/observability.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Observability</div>
+                  <div class="feature-desc">Dedicated, easy to integrate with Phoenix, dashboard that provides
+                    server-side
+                    webrtc-internals.</div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="shadow-box">
-            <div class="feature btn" onclick="location.href='https://hexdocs.pm/ex_webrtc/intro.html';">
-              <img class="feature-img" src="./img/tutorials.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Tutorials</div>
-                <div class="feature-desc">A series of tutorials introducing you to both WebRTC and Elixir WebRTC.</div>
+            <a href="https://hexdocs.pm/ex_webrtc/simulcast.html">
+              <div class="feature">
+                <img class="feature-img" src="./img/simulcast.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Simulcast</div>
+                  <div class="feature-desc">Support for multiple inbound resolutions that allows you to chose video
+                    quality of your preference.</div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="shadow-box">
-            <div class="feature btn"
-              onclick="location.href='https://github.com/membraneframework/membrane_webrtc_plugin';">
-              <img class="feature-img" src="./img/membrane.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Membrane Ready</div>
-                <div class="feature-desc">Sink and Source elements for the Membrane Framework.</div>
+            <a href="https://github.com/elixir-webrtc/xav">
+              <div class="feature">
+                <img class="feature-img" src="./img/xav.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Xav</div>
+                  <div class="feature-desc">Library for audio/video decoding that makes it easy to feed data into Elixir
+                    Nx.
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="shadow-box">
-            <div class="feature btn" onclick="location.href='#demos';">
-              <img class="feature-img" src="./img/demos.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Demo Applications</div>
-                <div class="feature-desc">Multiple demo applications deployed 24/7 for testing and experimental
-                  purposes.</div>
+            <a href="https://hexdocs.pm/ex_webrtc/intro.html">
+              <div class="feature">
+                <img class="feature-img" src="./img/tutorials.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Tutorials</div>
+                  <div class="feature-desc">A series of tutorials introducing you to both WebRTC and Elixir WebRTC.
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="shadow-box">
-            <div class="feature btn"
-              onclick="location.href='https://github.com/elixir-webrtc/ex_webrtc/tree/master/examples';">
-              <img class="feature-img" src="./img/examples.svg" />
-              <div class="feature-content">
-                <div class="feature-title">Examples</div>
-                <div class="feature-desc">Simple examples presenting API usage, ready to be run locally.</div>
+            <a href="https://github.com/membraneframework/membrane_webrtc_plugin">
+              <div class="feature">
+                <img class="feature-img" src="./img/membrane.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Membrane Ready</div>
+                  <div class="feature-desc">Sink and Source elements for the Membrane Framework.</div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="shadow-box">
-            <div class="feature btn" onclick="location.href='https://vimeo.com/946155859';">
-              <img class="feature-img" src="./img/whipwhep.svg" />
-              <div class="feature-content">
-                <div class="feature-title">WHIP/WHEP Ready</div>
-                <div class="feature-desc">Stream directly from OBS to an Elixir WebRTC based app.</div>
+            <a href="#demos">
+              <div class="feature">
+                <img class="feature-img" src="./img/demos.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Demo Applications</div>
+                  <div class="feature-desc">Multiple demo applications deployed 24/7 for testing and experimental
+                    purposes.</div>
+                </div>
               </div>
-            </div>
+            </a>
+          </div>
+          <div class="shadow-box">
+            <a href="https://github.com/elixir-webrtc/ex_webrtc/tree/master/examples">
+              <div class="feature">
+                <img class="feature-img" src="./img/examples.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">Examples</div>
+                  <div class="feature-desc">Simple examples presenting API usage, ready to be run locally.</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-box">
+            <a href="https://vimeo.com/946155859">
+              <div class="feature">
+                <img class="feature-img" src="./img/whipwhep.svg" />
+                <div class="feature-content">
+                  <div class="feature-title">WHIP/WHEP Ready</div>
+                  <div class="feature-desc">Stream directly from OBS to an Elixir WebRTC based app.</div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

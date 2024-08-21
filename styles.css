@@ -121,10 +121,6 @@ a:visited {
     padding: 45px 20px;
 }
 
-.btn {
-    cursor: pointer;
-}
-
 /* navbar */
 .navbar-outer {
     display: flex;
@@ -237,17 +233,12 @@ a:visited {
     color: #ffffff;
     font-family: var(--font-family-aeonik-medium);
     font-size: var(--font-size-l);
-}
-
-.hero-button-link {
     padding: 10px 20px;
     display: flex;
     gap: 16px;
-    text-decoration: none;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
+
 
 .hero-copy {
     display: flex;
@@ -585,9 +576,6 @@ a:visited {
         background-color: var(--colorsviolet20);
         color: var(--colorsviolet100);
         font-size: var(--font-size-xl);
-    }
-
-    .hero-button-link {
         padding: 16px 24px;
     }
 
@@ -625,14 +613,6 @@ a:visited {
         width: 210px;
         height: 56px;
         font-size: var(--font-size-xl);
-    }
-
-    .demo-button-link {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
     }
 
     .lc-content {
