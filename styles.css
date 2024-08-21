@@ -81,6 +81,10 @@ li {
     list-style-type: "•";
 }
 
+.navbar-menu-content li {
+    list-style-type: none;
+}
+
 li span {
     position: relative;
     left: 6px;
