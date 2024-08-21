@@ -76,11 +76,14 @@ body {
     margin: 0;
 }
 
+/* This effectively removes marker's margin and unifies spacing across browsers */
+li {
+    list-style-type: "•";
+}
+
 li span {
-    /* Reduce space between bullet point, which is by default set to 
-    margin-right: 14px, and <li>'s contet */
     position: relative;
-    left: -6px;
+    left: 6px;
 }
 
 a {
@@ -356,7 +359,7 @@ a:visited {
 
 /* live-coding */
 .lc ul {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .lc-outer {
