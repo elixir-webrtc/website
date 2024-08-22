@@ -436,10 +436,11 @@ a:visited {
     background-color: #FFFFFF;
     box-shadow: 3px 5px 4px rgba(210, 207, 253, 0.5);
     border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .feature:hover {
-    background: #eae7fc;
+    background-color: #eae7fc;
 }
 
 .feature-img {
