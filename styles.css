@@ -315,6 +315,20 @@ a:visited {
     box-shadow: 6px 6px 4px rgba(210, 207, 253, 0.5);
 }
 
+.demo-top {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
 .demo-img {
     width: 60px;
     height: 60px;
@@ -603,6 +617,14 @@ a:visited {
         width: 295px;
         height: 490px;
         padding: 55px 30px 55px 30px;
+    }
+
+    .demo-top {
+        gap: 25px;
+    }
+
+    .demo-bottom {
+        gap: 20px;
     }
 
     .demo-img {
