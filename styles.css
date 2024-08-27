@@ -364,6 +364,12 @@ a:visited {
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.demo-button:hover {
+    transform: scale(1.05);
 }
 
 /* live-coding */
@@ -450,7 +456,7 @@ a:visited {
     background-color: #FFFFFF;
     box-shadow: 3px 5px 4px rgba(210, 207, 253, 0.5);
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
 .feature:hover {
@@ -596,6 +602,18 @@ a:visited {
         color: var(--colorsviolet100);
         font-size: var(--font-size-xl);
         padding: 16px 24px;
+        transition: all 0.5s;
+    }
+
+    .hero-arrow:hover .arrow-right,
+    .hero-arrow:hover {
+        stroke: #ffffff;
+    }
+
+    .hero-button:hover {
+        background-color: var(--colorsviolet100);
+        color: #ffffff;
+        font-size: var(--font-size-xl);
     }
 
     .hero-copy {
