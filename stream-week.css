@@ -1,0 +1,109 @@
+.banner-outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(90deg, #46ADD8 -8.6%, #4C9CDC 5.4%, #5A78E7 42.4%, #6362EE 72.4%, #675AF1 91.4%);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 20px 120px;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+}
+
+.banner-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: var(--font-size-xxl);
+    line-height: 29px;
+}
+
+.banner-left-sw {
+    font-family: var(--font-family-aeonik-bold);
+}
+
+.banner-left-date {
+    font-family: var(--font-family-aeonik-regular);
+}
+
+.banner-desc {
+    font-family: var(--font-family-aeonik-bold);
+    font-size: var(--font-size-l);
+    line-height: 22px;
+}
+
+.banner-right {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 20px;
+}
+
+.banner-desc-list {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/* demos */
+.banner-desc ul {
+    /* Place bullet points close to <li>'s content */
+    list-style-position: inside;
+    padding: 0;
+    margin: 4px 0 0 0;
+}
+
+.banner-button {
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #ffffff;
+    width: max-content;
+    padding: 16px 24px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-xl);
+    line-height: 120%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .banner-left {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .banner-right {
+        padding-top: 10;
+    }
+
+    .banner-left-date {
+        display: block;
+    }
+
+    .play {
+        display: none;
+    }
+
+    .banner-button {
+        padding: 10px 20px 12px 20px;
+    }
+}
