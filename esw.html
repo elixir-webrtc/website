@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="[scrollbar-gutter:stable]">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  <title>Elixir WebRTC</title>
+  <meta name="description" content="Batteries-included WebRTC implementation for the Elixir ecosystem." />
+  <meta name="keywords" content="elixir, webrtc, audio, video, real-time" />
+  <meta name="image" content="https://elixir-webrtc.org/img/og_img.png" />
+  <!-- Social media tags -->
+  <meta property="og:title" content="Elixir WebRTC" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:description" content="Batteries-included WebRTC implementation for the Elixir ecosystem." />
+  <link rel="canonical" href="https://elixir-webrtc.org/" />
+  <meta property="og:url" content="https://elixir-webrtc.org/" />
+  <meta property="og:site_name" content="Elixir WebRTC" />
+  <meta property="og:image" content="https://elixir-webrtc.org/img/og_img.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="stream-week.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLMBKK133E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GLMBKK133E');
+  </script>
+
+  <!-- Hotjar Tracking Code for Elixir WebRTC -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5107828, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function (w, d, e, u, f, l, n) {
+      w[f] = w[f] || function () {
+        (w[f].q = w[f].q || [])
+          .push(arguments);
+      }, l = d.createElement(e), l.async = 1, l.src = u,
+        n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+    })
+      (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+    ml('account', '854830');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <script type="text/javascript" charset="UTF-8"
+    src="//cdn.cookie-script.com/s/668ff799654dd6187b7f3d8eeafb1cd4.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar-outer">
+      <nav class="container navbar">
+        <a href="/">
+          <div class="navbar-left">
+            <img width="36" height="36" src="img/logo.svg" alt="Elixir WebRTC" />
+            <div class="navbar-left-txt">Elixir WebRTC</div>
+          </div>
+        </a>
+        <div class="navbar-mid">
+          <div><a href="/#demos">Demos</a></div>
+          <div><a href="/#features">Features</a></div>
+          <div><a href="/#talks">Talks</a></div>
+        </div>
+        <div class="navbar-right">
+          <div><a href="https://hexdocs.pm/ex_webrtc/readme.html">Docs</a></div>
+          <a href="https://github.com/elixir-webrtc"><img src="img/github-logo.svg" alt="GitHub"
+              style="vertical-align:bottom;" /></a>
+        </div>
+        <div id="navbar-menu" class="navbar-menu">
+          <img width="36" height="36" src="./img/menu.svg" />
+        </div>
+        <div id="navbar-menu-content" class="navbar-menu-content">
+          <ul id="navbar-menu-list">
+            <li><a href="/#demos">Demos</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#talks">Talks</a></li>
+            <li><a href="https://hexdocs.pm/ex_webrtc/readme.html">Docs</a></li>
+            <li><a href="https://github.com/elixir-webrtc">GitHub</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="esw-banner">
+      <img class="esw-banner-play" width="18px" height="20px" src="img/play.svg" />
+      <span>JOIN US FOR 5 DAYS OF EXPERT-LED ELIXIR WEBRTC BROADCAST</span>
+    </section>
+    <section class="esw-hero-outer">
+      <div class="esw-hero">
+        <div class="esw-hero-copy">
+          <span class="esw-hero-date">October 21-25, 2024 | Remote | Time: Flex </span>
+          <div class="esw-hero-title">
+            <span class="esw-hero-title-1">Elixir Stream Week</span>
+            <span class="esw-hero-title-2">By Elixir Devs for Elixir Devs</span>
+          </div>
+          <span class="esw-hero-desc">
+            Five days. Five streams. Five top Elixir experts. Everything streamed using Elixir WebRTC. Grab a drink of
+            your choice and join us to see what they have to share.
+          </span>
+        </div>
+        <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'vvFoXP', true)">
+          <div class="esw-hero-button">
+            <span>Join us</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 12L4 12" stroke="#4339AC" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M14 18L20 12L14 6" stroke="#4339AC" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="esw-hero-img-container">
+        <img class="esw-hero-img-mobile" src="img/esw/hero-mobile.svg" aria-hidden="true" style="width: 100%;" />
+        <img class="esw-hero-img" src="img/esw/hero.svg" aria-hidden="true" style="width: 100%;" />
+      </div>
+    </section>
+    <section class="esw-agenda-outer">
+      <div class="esw-agenda">
+        <div class="esw-agenda-intro">
+          <span class="esw-agenda-title">Who's hitting the virtual stage?</span>
+          <span class="esw-agenda-desc">
+            In this first edition of Elixir Stream Week, you'll gain insights from top Elixir developers and discover
+            how to leverage Elixir for real-time multimedia
+          </span>
+        </div>
+        <div class="esw-streamers">
+          <div class="esw-streamer">
+            <div class="esw-streamer-photo">
+              <img width="240px" height="240px" src="./img/esw/jose.svg" />
+            </div>
+            <div class="esw-stream-desc">
+              <span class="esw-date">October 21st (Mon.)</span>
+              <div class="esw-name-title">
+                <span class="esw-name">José Valim</span>
+                <span class="esw-title">Projects that never were (part 2)</span>
+              </div>
+              <span class="esw-desc">A continuation of the latest Jose keynote from ElixirConf US.
+                "Projects that never were" are projects that Dashbit Team discussed and built proof of concept for,
+                but ultimately decided not to move forward with them.
+              </span>
+            </div>
+            <div class="esw-streamer-photo-mobile">
+              <img width="248px" height="166px" src="./img/esw/jose-mobile.svg" />
+            </div>
+          </div>
+          <div class="esw-streamer">
+            <div class="esw-streamer-photo">
+              <img width="240px" height="240px" src="./img/esw/mateusz.svg" />
+            </div>
+            <div class="esw-stream-desc">
+              <span class="esw-date">October 22nd (Tues.)</span>
+              <div class="esw-name-title">
+                <span class="esw-name">Mateusz Front</span>
+                <span class="esw-title">Boombox live coding session</span>
+              </div>
+              <span class="esw-desc">Boombox is a new tool built on top of Membrane to make it easier
+                to start your journey with multimedia. A couple of weeks ago, Mateusz <a
+                  href="https://blog.swmansion.com/boombox-a-simple-streaming-library-on-top-of-membrane-307649c09d63">announced</a>
+                its
+                first release and this stream will give you some overview of the Boombox API.
+              </span>
+            </div>
+            <div class="esw-streamer-photo-mobile">
+              <img width="248px" height="166px" src="./img/esw/mateusz-mobile.svg" />
+            </div>
+          </div>
+          <div class="esw-streamer">
+            <div class="esw-streamer-photo">
+              <img width="240px" height="240px" src="./img/esw/chris.svg" />
+            </div>
+            <div class="esw-stream-desc">
+              <span class="esw-date">October 23rd (Wed.)</span>
+              <div class="esw-name-title">
+                <span class="esw-name">Chris McCord</span>
+                <span class="esw-title">Live-coding real-time Twitch with LiveView, Elixir WebRTC
+                  and Fly.io</span>
+              </div>
+              <span class="esw-desc">
+                Chris will show you how easy it is to build a real-time Twitch clone,
+                make it scalable and distribute it using LiveView, Elixir WebRTC and Fly.io.
+              </span>
+            </div>
+            <div class="esw-streamer-photo-mobile">
+              <img width="248px" height="166px" src="./img/esw/chris-mobile.svg" />
+            </div>
+          </div>
+          <div class="esw-streamer">
+            <div class="esw-streamer-photo">
+              <img width="240px" height="240px" src="./img/esw/jonatan.svg" />
+            </div>
+            <div class="esw-stream-desc">
+              <span class="esw-date">October 24th (Thurs.)</span>
+              <div class="esw-name-title">
+                <span class="esw-name">Jonatan Kłosko</span>
+                <span class="esw-title">Q&A about Livebook, Elixir Nx and Bumblebee</span>
+              </div>
+              <span class="esw-desc">
+                Ever wanted to ask a question related to Elixir's ML libraries?
+                This will be a perfect occasion.
+                Jonatan can't wait to respond to all of your questions!
+              </span>
+            </div>
+            <div class="esw-streamer-photo-mobile">
+              <img width="248px" height="166px" src="./img/esw/jonatan-mobile.svg" />
+            </div>
+          </div>
+          <div class="esw-streamer">
+            <div class="esw-streamer-photo">
+              <img width="240px" height="240px" src="./img/esw/filipe.svg" />
+            </div>
+            <div class="esw-stream-desc">
+              <span class="esw-date">October 25th (Fri.)</span>
+              <div class="esw-name-title">
+                <span class="esw-name">Filipe Cabaço</span>
+                <span class="esw-title">Real-time system using Elixir - Supabase stories</span>
+              </div>
+              <span class="esw-desc">
+                Case studies of Elixir usage in Supabase.
+                Learn how they scale to millions of messages per second.
+                At the end, of course, Q&A session!
+              </span>
+            </div>
+            <div class="esw-streamer-photo-mobile">
+              <img width="248px" height="166px" src="./img/esw/filipe-mobile.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="esw-footer-outer">
+      <div class="esw-footer">
+        <div class="esw-footer-title-desc">
+          <span class="esw-footer-title">Come and join us!</span>
+          <span class="esw-footer-desc">Join us for 5 days of expert sessions on Elixir WebRTC and gain insights from
+            leading Elixir developers.
+            You’ll also get links to the recordings, so you can rewatch them at your convenience.</span>
+        </div>
+        <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'vvFoXP', true)">
+          <div class="esw-footer-button">
+            <span>Join us</span>
+            <img src="img/arrowright.svg" />
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-outer">
+      <div class="container footer">
+        <img class="footer-img" src="img/swm.svg" />
+        <div>
+          © Software Mansion 2024. All trademarks and copyrights belong to their respective owners.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
