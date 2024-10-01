@@ -366,7 +366,7 @@
   /* align-items: center; */
   overflow-x: scroll;
   width: 100%;
-  gap: 24px;
+  gap: 8px;
   padding: 10px 16px 10px 16px;
 }
 
@@ -392,6 +392,7 @@
 @media (min-width: 780px) {
   .esw-streamers {
     flex-direction: column;
+    gap: 24px;
   }
 
   .esw-streamer {
