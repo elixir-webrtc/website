@@ -323,7 +323,7 @@
 }
 
 .esw-agenda-title {
-  font-family: var(--font-family-aeonik-bold);
+  font-family: var(--font-family-aeonik-medium);
   font-size: 24px;
   line-height: 115%;
   text-align: center;
@@ -344,6 +344,7 @@
   }
 
   .esw-agenda-title {
+    font-family: var(--font-family-aeonik-bold);
     font-size: 32px;
   }
 }
@@ -422,12 +423,16 @@
 
 .esw-date {
   font-family: var(--font-family-aeonik-regular);
-  font-size: var(--font-size-xl);
+  font-size: 16px;
   line-height: 130%;
   letter-spacing: 0.01em;
-
-  /* Colors/Violet/100 */
   color: #4339AC;
+}
+
+@media (min-width: 780px) {
+  .esw-date {
+    font-size: 20px;
+  }
 }
 
 .esw-name {
@@ -456,7 +461,6 @@
 .esw-name-title {
   display: flex;
   flex-direction: column;
-
 }
 
 .esw-desc {
