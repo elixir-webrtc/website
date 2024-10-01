@@ -307,7 +307,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 16px;
+  padding: 64px 0px 64px 0px;
   gap: 64px;
 }
 
@@ -317,6 +317,9 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .esw-agenda-title {
@@ -331,6 +334,8 @@
 @media (min-width: 780px) {
   .esw-agenda-intro {
     gap: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .esw-agenda {
@@ -361,7 +366,7 @@
   overflow-x: scroll;
   width: 100%;
   gap: 24px;
-  padding: 10px;
+  padding: 10px 16px 10px 16px;
 }
 
 .esw-streamer {
