@@ -229,6 +229,8 @@
   background: linear-gradient(261.82deg, #46ADD8 -4.89%, #675AF1 82.73%);
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .esw-hero-title-2 {
