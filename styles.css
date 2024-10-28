@@ -95,6 +95,10 @@ a {
     color: inherit;
 }
 
+.esw-desc a {
+    text-decoration: underline;
+}
+
 .lc a {
     text-decoration: underline;
 }
@@ -102,6 +106,15 @@ a {
 a:visited {
     color: inherit;
 }
+
+.esw-link {
+    background: linear-gradient(261.82deg, #46ADD8 -4.89%, #675AF1 82.73%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .section-header {
     font-family: var(--font-family-aeonik-medium);
