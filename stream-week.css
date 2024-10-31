@@ -1,3 +1,7 @@
+/* .esw-desc-link a {
+  text-decoration: underline;
+} */
+
 .banner-outer {
   display: flex;
   justify-content: center;
@@ -490,6 +494,18 @@
   font-size: var(--font-size-m);
   line-height: 160%;
   color: #4339AC;
+}
+
+.esw-desc-link {
+  display: flex;
+  color: #4339AC;
+  font-size: 16px;
+  font-family: var(--font-family-aeonik-medium);
+  line-height: 20.8px;
+  border-bottom: 1.5px solid #4339AC;
+  align-items: end;
+  justify-content: end;
+  gap: 6px;
 }
 
 .esw-footer-outer {
