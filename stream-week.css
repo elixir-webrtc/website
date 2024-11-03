@@ -304,6 +304,7 @@
   background: #E9E7FE;
   display: flex;
   justify-content: center;
+  padding-top: 64px;
 }
 
 .esw-stat-tiles {
@@ -363,7 +364,7 @@
 
   .esw-stat-tiles {
     display: flex;
-    padding: 16px;
+    padding: 11px;
   }
 
   .esw-stat-tile-outer {
@@ -597,6 +598,103 @@
   justify-content: end;
   gap: 6px;
 }
+
+.esw-qa-outer {
+  width: 100%;
+  background-color: #F6F5FF;
+  display: flex;
+  justify-content: center;
+}
+
+.esw-qa {
+  padding: 105px 101px;
+  display: flex;
+  width: 1120px;
+  justify-content: space-between;
+}
+
+.esw-qa-header {
+  font-size: 32px;
+  line-height: 36.8px;
+  letter-spacing: 2%;
+  font-family: var(--font-family-aeonik-bold);
+  color: #4339AC;
+  padding-right: 20px;
+}
+
+.esw-qa-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: right;
+  max-width: 600px;
+}
+
+.esw-qa-tile-icon {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.esw-qa-tile {
+  background-color: #FFFFFF;
+  box-shadow: 3px 4px 5px rgba(210, 207, 253, 0.5);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 292px;
+  height: 80px;
+  gap: 20px;
+  padding: 14px 35px 14px 24px;
+}
+
+.esw-qa-tile ul {
+  padding-left: 10px;
+}
+
+.esw-qa-tile-desc {
+  font-size: 16px;
+  font-family: var(--font-family-aeonik-regular);
+  line-height: 160%;
+  color: #4339AC;
+}
+
+@media (max-width: 1000px) {
+  .esw-qa {
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    padding: 48px 16px 64px 16px;
+  }
+
+  .esw-qa-header {
+    font-size: 24px;
+    line-height: 27.6px;
+    letter-spacing: 1%;
+    font-family: var(--font-family-aeonik-medium);
+    color: #4339AC;
+  }
+
+  .esw-qa-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    max-width: 450px;
+    max-height: none;
+  }
+
+  .esw-qa-tile {
+    flex-direction: column;
+    width: 165px;
+    height: 164px;
+    gap: 13px;
+    padding: 15px 22px;
+  }
+
+}
+
 
 .esw-footer-outer {
   width: 100%;
