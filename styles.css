@@ -27,9 +27,9 @@
 }
 
 :root {
-    --colorsviolet100: #4239ac;
     --colorsviolet20: #f6f5fe;
-    --colorsviolet40: #d2cffd;
+    --colorsviolet30: hsl(244, 95%, 93%);
+    --colorsviolet100: #4239ac;
     --lighttext-colorsnavy-100: #001a72;
 
     --font-family-aeonik-bold: "Aeonik-Bold", Helvetica;
@@ -55,6 +55,7 @@
 /* Use border-box globally */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -436,7 +437,7 @@ a:visited {
 /* features */
 .features-outer {
     width: 100%;
-    background-color: var(--colorsviolet20);
+    background-color: #ecebfb;
 }
 
 .features {
@@ -504,6 +505,100 @@ a:visited {
     font-weight: 400;
     line-height: 160%;
     /* text-align: center; */
+    color: var(--colorsviolet100);
+}
+
+/* companies */
+.companies-outer {
+    width: 100%;
+    background-color: var(--colorsviolet20);
+}
+
+.companies {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.companies-desc {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--colorsviolet100);
+    line-height: 160%;
+}
+
+.companies-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    padding: 30px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 5px 4px rgba(210, 207, 253, 0.5);
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.company:hover {
+    background-color: #eae7fc;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo img[src*="turn.jpg"] {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-logo-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-aeonik-medium);
+    font-size: var(--font-size-s);
+    color: var(--colorsviolet100);
+}
+
+.company-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.company-name {
+    color: var(--colorsviolet100);
+    font-family: var(--font-family-aeonik-bold);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.company-desc {
+    font-family: var(--font-family-aeonik-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
     color: var(--colorsviolet100);
 }
 
